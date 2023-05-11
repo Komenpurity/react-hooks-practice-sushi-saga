@@ -9,13 +9,13 @@ function App() {
 
   useEffect(
       () => {
-        fetch("http://localhost:3000/sushis")
+        fetch("https://sushi-data.onrender.com/sushis")
         .then(response => response.json())
         .then (data => setSushi(data)) 
       },[] ) 
 
   function addPlate(id){
-    fetch(`http://localhost:3000/sushis/${id}`)   
+    fetch(`https://sushi-data.onrender.com/sushis/${id}`)   
     .then(response => response.json())
     .then (data => newItem(data))  
      
