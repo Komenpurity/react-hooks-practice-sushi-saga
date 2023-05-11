@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-hooks-practice-sushi-saga/static/css/main.41352e3a.css",
+    "main.js": "/react-hooks-practice-sushi-saga/static/js/main.566fd9d4.js",
+    "index.html": "/react-hooks-practice-sushi-saga/index.html",
+    "main.41352e3a.css.map": "/react-hooks-practice-sushi-saga/static/css/main.41352e3a.css.map",
+    "main.566fd9d4.js.map": "/react-hooks-practice-sushi-saga/static/js/main.566fd9d4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.41352e3a.css",
+    "static/js/main.566fd9d4.js"
+  ]
+}
