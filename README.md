@@ -7,7 +7,7 @@ before you can eat, you're going to have to help us get it working.
 
 **Here's what it should look like:**
 
-![Sushi Saga](sushi-saga-demo.gif)
+![Sushi Saga](sushi-saga-demo.gif) 
 
 **Doesn't that look delicious?!**
 
