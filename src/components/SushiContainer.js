@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import MoreButton from "./MoreButton";
 import Sushi from "./Sushi";
 
-function SushiContainer({sushi}) { 
+function SushiContainer({sushi,addPlate}) { 
 
   const [sushiNumber,setSushiNumber] = useState(4) 
 
@@ -13,7 +13,7 @@ function SushiContainer({sushi}) {
   return (
     <div className="belt">
       {sushi.slice(sushiNumber-4,sushiNumber).map( (item) => {
-        return <Sushi id = {item.id} name = {item.name} url = {item.img_url} price = {item.price}/> 
+        return <Sushi addPlate={addPlate} id = {item.id} name = {item.name} url = {item.img_url} price = {item.price}/> 
       })}
       <MoreButton addFourSushi={addFourSushi}/>
     </div>

@@ -1,9 +1,9 @@
 import React from "react";
 
-function Sushi({id,name,price,url}) {
+function Sushi({id,name,price,url,addPlate}) {
   return (
     <div className="sushi" key = {id} > 
-      <div className="plate" onClick={/* Give me a callback! */ null}>
+      <div className="plate" onClick={() => addPlate(id)}> 
         {/* Tell me if this sushi has been eaten! */}
         {false ? null : (
           <img
