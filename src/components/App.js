@@ -4,7 +4,8 @@ import Table from "./Table";
 
 function App() {
   const [sushi,setSushi] = useState([]) 
-  const [plates,setPlates] = useState([])  
+  const [plates,setPlates] = useState([]) 
+  const [price,setPrice] = useState(100) 
 
   useEffect(
       () => {
@@ -22,13 +23,13 @@ function App() {
 
   function newItem(data){
     setPlates([...plates,data])  
-    console.log(plates)
+    setPrice(price - data.price) 
   }
 
   return (
     <div className="app">
       <SushiContainer sushi = {sushi} addPlate={addPlate}/> 
-      <Table plates = {plates}/>
+      <Table price={price} plates = {plates}/>
     </div>
   );
 }
